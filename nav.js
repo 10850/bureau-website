@@ -1,9 +1,8 @@
-if(screen.width < 768 + "px") { 
-    //load file for screen width 1000 and up here
-    const hamburger = document.getElementById("menu-btn");
-    const menuContainer = document.getElementById("menu-lists-container");
-    let menuOpen = false;
+const hamburger = document.getElementById("menu-btn");
+const menuContainer = document.getElementById("menu-lists-container");
+let menuOpen = false;
 
+if(screen.width < 768 ) {
     console.log(hamburger)
     // åben burger menu on click
     hamburger.addEventListener('click', () => {
@@ -44,9 +43,8 @@ if(screen.width < 768 + "px") {
             }
         })
 
-} else {
-    
-}
-
+    }else {
+            menuContainer.style.left = 0;
+          }
 
     

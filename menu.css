@@ -58,6 +58,7 @@ header * {
 
 .global-menu a {
     text-decoration: none;
+    font-size: 16px;
 }
 
 .global-menu a:focus {
@@ -186,7 +187,7 @@ header * {
     header {
         background-color: #1b1b1b;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.7fr 1fr;
         grid-template-areas: 
                         "header-icons menuliste";
     }
