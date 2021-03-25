@@ -434,6 +434,10 @@
 }
 
 footer {
+    color: white;
+    padding: 1em 0 1em 0;
+    background-color: #ff9933;
+    margin-top: 2em;
     font-family: Sansa-Light;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -449,13 +453,17 @@ footer {
     margin-top: 2em;
 }
 
-
 .kontaktelement {
     margin: auto;
+    font-weight: 600;
 }
 
-.navn{
+.navn {
     text-decoration: underline;
+}
+
+#koninfo {
+    font-family: Sansa-Bold; 
 }
 
 #bjarne {
@@ -468,4 +476,8 @@ footer {
 
 #terkel {
     grid-area: terkel;
+}
+
+footer li {
+    margin-left: 1em;
 }
