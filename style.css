@@ -185,6 +185,9 @@ h1, h2, h3 {
 
 #hero-section video {
     max-width: 100%;
+    height: 550px;
+    margin: auto;
+    display: flex;
     
 }
 
@@ -463,6 +466,7 @@ h1, h2, h3 {
     font-family: Sansa-Bold;
     grid-area: servicetitel;
     font-size: 26px;
+    margin-bottom: -20px;
 }
 
 #services-section {
@@ -483,29 +487,44 @@ h1, h2, h3 {
 /* OM OS */
 #omos-section {
     margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 #omos-section article {
-    padding-right: 8em;
-    padding-left: 8em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#om-os-billeder div {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #om-os-billeder img {
     border-radius: 50%;
-    height: 300px;
+    height: 150px;
     margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    padding: 10px;
   }
 
 #omos-section p {
     font-family: Sansa-Light;
     font-weight: 600;
+    line-height: 23px;
     
 }
 
-#omos-section blockquote {
+#omos-section div p {
     font-family: Sansa-Bold;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 #omos-section h2 {
@@ -515,31 +534,31 @@ h1, h2, h3 {
 }
 
 #om-os-billeder {
-    margin-top: 10px;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 1.5em;
+    
 }
 
 
 
 footer {
+    max-width: 100%;
     color: white;
-    margin-right: -0.8em;
-    margin-left: -0.8em;
-    margin-bottom: -0.8em;
-    padding: 1em 0 1em 0;
+    padding: 1em 0em ;
     background-color: #ff9933;
     margin-top: 2em;
     font-family: Sansa-Light;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-                    "bjarne drescher terkel"
-                    ". copyright ."
+                    "bjarne bjarne bjarne"
+                    "drescher drescher drescher"
+                    "terkel terkel terkel"
+                    "copyright copyright copyright"
 }
 
 #copyright { 
@@ -563,19 +582,23 @@ footer {
 
 #bjarne {
     grid-area: bjarne;
+    font-size: 14px;
 }
 
 #drescher {
     grid-area: drescher;
+    font-size: 14px;
 }
 
 #terkel {
     grid-area: terkel;
+    font-size: 14px;
 }
 
 footer li {
-    margin-left: 1em;
+    margin-bottom: 10px;
 }
+
 
 @media only screen and (min-width: 480px) {
     /* GRID til service section */
@@ -628,6 +651,60 @@ footer li {
     .service-tekst {
         padding: 30px;
     }
+
+
+    /* OM OS */
+#omos-section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#omos-section article {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#om-os-billeder img {
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+  }
+
+#omos-section p {
+    font-family: Sansa-Light;
+    font-weight: 600;
+    line-height: 23px;
+    
+}
+
+#omos-section div p {
+    font-family: Sansa-Bold;
+    font-size: 15px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#omos-section h2 {
+    font-family: Sansa-Bold;
+    text-align: center;
+    font-size: 42px;
+}
+
+#om-os-billeder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+    
+}
 
 }
 
@@ -773,6 +850,58 @@ footer li {
     
     .tryk-desc {
         margin-top: -20px;
+    }
+
+            /* OM OS */
+    #omos-section {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    #omos-section article {
+        padding-right: 8em;
+        padding-left: 8em;
+    }
+
+    #om-os-billeder img {
+        border-radius: 50%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    #omos-section p {
+        font-family: Sansa-Light;
+        font-weight: 600;
+        
+    }
+
+    #om-os-billeder div {
+        text-align: center;
+    }
+
+    #omos-section div p {
+        font-family: Sansa-Bold;
+        font-size: 22px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #omos-section h2 {
+        font-family: Sansa-Bold;
+        text-align: center;
+        font-size: 42px;
+    }
+
+    #om-os-billeder {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
 }
@@ -928,6 +1057,107 @@ footer li {
     .tryk-desc {
         margin-top: -25px;
     }
+
+    /* OM OS */
+#omos-section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#omos-section article {
+    padding-right: 8em;
+    padding-left: 8em;
+}
+
+#om-os-billeder img {
+    border-radius: 50%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+#omos-section p {
+    font-family: Sansa-Light;
+    font-weight: 600;
+    
+}
+
+#omos-section h2 {
+    font-family: Sansa-Bold;
+    text-align: center;
+    font-size: 42px;
+}
+
+#omos-section div p {
+    font-family: Sansa-Bold;
+    font-size: 22px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#om-os-billeder {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* FOOTER */
+footer {
+    max-width: 100%;
+    color: white;
+    padding: 1em 0 1em 0;
+    background-color: #ff9933;
+    margin-top: 2em;
+    font-family: Sansa-Light;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+                    "bjarne drescher terkel"
+                    ". copyright ."
+}
+
+#copyright { 
+    text-align: center;
+    grid-area: copyright;
+    margin-top: 2em;
+}
+
+.kontaktelement {
+    margin: auto;
+    font-weight: 600;
+}
+
+.navn {
+    text-decoration: underline;
+}
+
+#koninfo {
+    font-family: Sansa-Bold; 
+}
+
+#bjarne {
+    grid-area: bjarne;
+}
+
+#drescher {
+    grid-area: drescher;
+}
+
+#terkel {
+    grid-area: terkel;
+}
+
+footer li {
+    margin-left: 1em;
+    margin-bottom: 10px;
+}
 
 
 }
