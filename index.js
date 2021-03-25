@@ -1,3 +1,5 @@
+document.getElementById('vid').play();
+
 let lukKnapper = document.querySelectorAll(".luk-overlay")
 
 
