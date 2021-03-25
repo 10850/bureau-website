@@ -51,3 +51,8 @@ for (let lukKnap of lukKnapper) {
                 }
         })
 }
+
+
+
+
+

@@ -281,6 +281,12 @@ h1, h2, h3 {
     line-height: 23px;
 }
 
+#hjemmesideproduktion-tekst,
+#logodesign-tekst {
+    overflow-y: scroll;
+    height: 400px;
+}
+    
 
 
 /* styling til ikoner */
@@ -603,6 +609,12 @@ footer li {
 
 
 @media only screen and (min-width: 480px) {
+    #hjemmesideproduktion-tekst,
+    #logodesign-tekst {
+        overflow-y: hidden;
+        height: 100%;
+    }
+
     /* GRID til service section */
     #hjemmesideproduktion-ikon {
         width: 75%;     
