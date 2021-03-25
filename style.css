@@ -242,7 +242,6 @@ h1, h2, h3 {
 
 .service-tekst {
     -webkit-overflow-scrolling: touch;
-    overflow:scroll;
     grid-area: tekst;
 }
 
@@ -464,7 +463,6 @@ h1, h2, h3 {
     font-family: Sansa-Bold;
     grid-area: servicetitel;
     font-size: 26px;
-    text-decoration: underline;
 }
 
 #services-section {
@@ -802,14 +800,18 @@ footer p {
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 30px;
-        background-color: white;
-        color: black;
+        background-color: rgb(255, 153, 51);
+        color: white;
         font-weight: 600;
         max-height: 100%;;
     }
 
+    .service-tekst p {
+        line-height: 23px;
+    }
+
     .service-tekst h3 {
-        color: rgb(255, 153, 51);
+        color: white;
     }
 
     .overlay-indhold {
