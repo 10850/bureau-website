@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st3{stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st7{display:none;}
+	.st8{display:inline;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st9{stroke:#000000;stroke-width:19;stroke-miterlimit:10;}
+	.st10{fill:#FFFFFF;}
+	.st11{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+	.st12{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st14{stroke:#000000;stroke-miterlimit:10;}
+	.st15{stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="Computer1">
+</g>
+<g id="Computer2">
+</g>
+<g id="Tekstproduktion">
+</g>
+<g id="Foto">
+</g>
+<g id="Film">
+</g>
+<g id="BMC">
+</g>
+<g id="Infografik">
+	<path id="Papir_1_" class="st0" d="M344.91,392.48H155.09c-8.21,0-14.87-6.66-14.87-14.87V122.39c0-8.21,6.66-14.87,14.87-14.87
+		h189.81c8.21,0,14.87,6.66,14.87,14.87v255.23C359.77,385.82,353.12,392.48,344.91,392.48z"/>
+	<g>
+		<line class="st4" x1="165.79" y1="143.55" x2="237.97" y2="143.55"/>
+		<line class="st4" x1="165.79" y1="166.14" x2="237.97" y2="166.14"/>
+		<line class="st4" x1="165.79" y1="188.72" x2="237.97" y2="188.72"/>
+		<line class="st4" x1="165.79" y1="211.3" x2="237.97" y2="211.3"/>
+		<line class="st4" x1="165.79" y1="233.88" x2="237.97" y2="233.88"/>
+	</g>
+	<line class="st4" x1="165.79" y1="354.31" x2="257.66" y2="354.31"/>
+	<line class="st4" x1="165.79" y1="354.31" x2="165.79" y2="257.7"/>
+	<path class="st12" d="M230.49,289.91h15.78c2.06,0,3.73,1.48,3.73,3.31v61.1h-23.24v-61.1
+		C226.76,291.39,228.43,289.91,230.49,289.91z"/>
+	<path class="st12" d="M204.67,322.11h15.78c2.06,0,3.73,1.48,3.73,3.31v28.9h-23.24v-28.9
+		C200.93,323.59,202.6,322.11,204.67,322.11z"/>
+	<path class="st12" d="M178.84,257.7h15.78c2.06,0,3.73,1.48,3.73,3.31v93.3h-23.24v-93.3C175.11,259.19,176.78,257.7,178.84,257.7z
+		"/>
+	<g>
+		<line class="st4" x1="271.25" y1="257.7" x2="343.43" y2="257.7"/>
+		<line class="st4" x1="271.25" y1="280.25" x2="343.43" y2="280.25"/>
+		<line class="st4" x1="271.25" y1="302.8" x2="343.43" y2="302.8"/>
+		<line class="st4" x1="271.25" y1="325.35" x2="343.43" y2="325.35"/>
+		<line class="st4" x1="271.25" y1="347.9" x2="343.43" y2="347.9"/>
+	</g>
+	<g>
+		<g>
+			<path d="M300.29,188.72l-37.37,21.57c-11.91-20.64-4.84-47.02,15.79-58.94c6.87-3.97,13.64-5.78,21.57-5.78V188.72z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M300.29,188.72l37.37,21.57c-11.91,20.64-38.3,27.71-58.94,15.79c-6.87-3.97-11.82-8.92-15.79-15.79L300.29,188.72z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M300.29,188.72v-43.15c23.83,0,43.15,19.32,43.15,43.15c0,7.93-1.81,14.7-5.78,21.57L300.29,188.72z"/>
+		</g>
+	</g>
+	<circle class="st10" cx="300.29" cy="188.72" r="21.57"/>
+	<g>
+		<line class="st13" x1="300.29" y1="139.19" x2="300.29" y2="188.72"/>
+		<line class="st13" x1="300.29" y1="188.72" x2="346.45" y2="215.37"/>
+		<line class="st13" x1="300.29" y1="188.72" x2="253.12" y2="215.95"/>
+	</g>
+</g>
+<g id="Logodesign">
+</g>
+<g id="Tryksager">
+</g>
+</svg>

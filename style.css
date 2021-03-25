@@ -4,6 +4,77 @@
     box-sizing: border-box;
 }
 
+/* IKONER SVG CSS */
+/* Hjemmesideproduktion */
+.st0{fill:#FFFFFF;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+.st1{fill:#FFFFFF;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+.st2{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st3{stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+.st4{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+.st5{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st6{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st7{display:none;}
+.st8{display:inline;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st9{stroke:#000000;stroke-width:19;stroke-miterlimit:10;}
+.st10{fill:#FFFFFF;}
+.st11{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+.st12{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+.st13{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+.st14{stroke:#000000;stroke-miterlimit:10;}
+.st15{stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+
+/* Tekstproduktion */
+.st0{fill:#FFFFFF;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+.st1{fill:#FFFFFF;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+.st2{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st3{stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+.st4{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+.st5{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st6{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st7{display:none;}
+.st8{display:inline;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+.st9{stroke:#000000;stroke-width:19;stroke-miterlimit:10;}
+.st10{fill:#FFFFFF;}
+.st11{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+.st12{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+.st13{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+.st14{stroke:#000000;stroke-miterlimit:10;}
+.st15{stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+
+/* Fotografering */
+.st0{fill:#FFFFFF;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st3{stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st7{display:none;}
+	.st8{display:inline;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st9{stroke:#000000;stroke-width:19;stroke-miterlimit:10;}
+	.st10{fill:#FFFFFF;}
+	.st11{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+	.st12{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st14{stroke:#000000;stroke-miterlimit:10;}
+	.st15{stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+
+/* Videoproduktion */
+
+
+/* BMC */
+
+
+/* Infografik */
+
+
+/* Logodesign */
+
+
+/* Tryksager */
+
+
+
 .overlay {
     position: fixed; /* Vil altid være ovenpå siden */
     display: none; /* vises ikke som default */
