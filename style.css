@@ -433,7 +433,41 @@
                     "logodesign tryksager .";
 }
 
-footer p {
+footer {
+    border-top-style: solid;
+    padding-top: 1em;
     font-family: Sansa-Light;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+                    "bjarne drescher terkel"
+                    ". copyright ."
+}
+
+#copyright { 
     text-align: center;
+    grid-area: copyright;
+    margin-top: 2em;
+}
+
+
+.kontaktelement {
+    margin: auto;
+}
+
+.navn{
+    text-decoration: underline;
+}
+
+#bjarne {
+    grid-area: bjarne;
+}
+
+#drescher {
+    grid-area: drescher;
+}
+
+#terkel {
+    grid-area: terkel;
 }
