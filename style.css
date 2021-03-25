@@ -202,7 +202,7 @@ h1, h2, h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.05); /* Black background with opacity */
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 2; /* putter dette lag forrest */
     cursor: pointer; 
 }
@@ -236,6 +236,13 @@ h1, h2, h3 {
     grid-area: illustration;
 }
 
+.service-illustration svg {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
 .service-tekst {
     grid-area: tekst;
 }
@@ -247,19 +254,26 @@ h1, h2, h3 {
 .overlay-indhold {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-rows: 0fr 0fr 1fr;
     grid-template-areas: 
                 "luk luk"
+                "illustration illustration"
                 "tekst tekst";
 }
 
 .service-tekst {
-    padding: 8px 0px;
+    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: rgb(255, 153, 51);
+    color: white;
 }
 
 .service-tekst h3 {
     font-family: Sansa-Bold;
     margin-bottom: 5px;
+    color: white;
 }
 
 .service-tekst p {
@@ -472,43 +486,43 @@ footer p {
 @media only screen and (min-width: 480px) {
     /* GRID til service section */
     #hjemmesideproduktion-ikon {
-        width: 45%;     
+        width: 75%;     
     }
 
 
     #tekstproduktion-ikon {
-        width: 45%;  
+        width: 75%;  
     }
 
 
     #foto-ikon {
-        width: 45%;  
+        width: 75%;  
     }
 
 
     #video-ikon {
-        width: 45%;  
+        width: 65%;   
     }
 
 
     #bmc-ikon {
-        width: 45%;  
+        width: 75%;   
     }
 
 
     #infografik-ikon {
-        width: 45%;  
+        width: 75%;   
     }
 
 
     #logodesign-ikon {
-        width: 45%;  
+        width: 75%;   
         
     }
 
 
     #tryksager-ikon {
-        width: 45%;  
+        width: 75%;  
 
     }
 
@@ -573,9 +587,44 @@ footer p {
         padding-right: 50px;
     }
 
+    .service-illustration {
+        height: 70vh;
+        max-width: 100%;
+    }
+
+    .service-illustration svg {
+        position: relative;
+        top: -10%;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        max-width: 100%;
+    }
+
     .service-tekst {
         padding-left: 30px;
         padding-right: 30px;
+        padding-top: 30px;
+        background-color: rgb(255, 153, 51);
+        color: white;
+        height: 98.2%;
+    }
+
+    .service-tekst h3 {
+        color: white;
+    }
+
+    .overlay-indhold {
+        height: 77.3vh;
+        margin-top: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr;
+        grid-template-areas: 
+                    ". luk"
+                    "illustration tekst";
     }
 
 }
@@ -643,4 +692,53 @@ footer p {
         padding-right: 50px;
         
     }
+
+
+    .service-illustration {
+        height: 70vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .service-illustration svg {
+        position: relative;
+        top: -30%;
+        margin-top: 5em;
+        max-width: 80%;
+    }
+
+    .service-tekst {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        background-color: white;
+        color: black;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .service-tekst p {
+        font-weight: 600;
+    }
+
+    .service-tekst h3 {
+        color: rgb(255, 153, 51);
+    }
+
+
+    .overlay-indhold {
+        height: 77.3vh;
+        margin-top: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr;
+        grid-template-areas: 
+                    ". luk"
+                    "illustration tekst";
+    }
+
+
 }
