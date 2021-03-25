@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+
+/* FONTS */
+@font-face {
+    font-family: Sansa-Bold;
+    src: url("sansa-font/SANSB___.TTF")
+}
+
+@font-face {
+    font-family: Sansa-Light;
+    src: url("sansa-font/SANSL___.TTF")
+}
+
 /* IKONER SVG CSS */
 /* Hjemmesideproduktion */
 #Computer1  .st0{fill:#FFFFFF;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
@@ -93,7 +105,7 @@
 #BMC .st10{fill:#FFFFFF;}
 #BMC .st11{fill:none;}
 #BMC .st12{stroke:#000000;stroke-width:8;stroke-miterlimit:10;}
-#BMC .st13{font-family:'MyriadPro-Regular';}
+#BMC .st13{font-family: Sansa-Bold;}
 #BMC .st14{font-size:170px;}
 #BMC .st15{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
 #BMC .st16{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
@@ -164,6 +176,16 @@
     margin: 0.8em;
 }
 
+.hero-section video {
+    max-width: 100%;
+    
+}
+
+.hero-section {
+    padding-top: 40px;
+}
+
+
 .overlay {
     position: fixed; /* Vil altid være ovenpå siden */
     display: none; /* vises ikke som default */
@@ -178,57 +200,240 @@
     cursor: pointer; 
 }
 
+.luk-overlay {
+    position: relative;
+    margin-left: auto;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.overlay-indhold {
+    position: relative;
+    top: 90px;
+    background-color: white;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    padding-top: 0.8em;
+    height: 100%;
+}
+
+.service-tekst {
+    margin-left: 20px;
+}
+
+/* GRID TIL OVERLAY INDHOLD */
+.service-illustration {
+    grid-area: illustration;
+}
+
+.service-tekst {
+    grid-area: tekst;
+}
+
+.luk-overlay {
+    grid-area: luk;
+}
+
+.overlay-indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    grid-template-areas: 
+                "luk luk"
+                "illustration tekst";
+}
+
 
 
 /* styling til ikoner */
 .service-ikon {
     cursor: pointer;
     width: 100%;
-    height: 100px;
     display: flex;
     justify-content: center;
     justify-items: center;
+}
+
+.ikon-beskrivelse {
+    text-align: center;
+    margin-top: -40px;
+    font-family: Sansa-Light;
+    display: none;
+}
+
+.foto-desc {
+    margin-top: -60px;
+}
+
+.video-desc {
+    margin-top: -30px;
+}
+
+.tryk-desc {
+    margin-top: -60px;
 }
 
 
 /* GRID til service section */
 #hjemmesideproduktion-ikon {
     grid-area: hjemmesideproduktion;
+    transition: .2s; 
+    width: 70%;     
+}
+
+#hjemmesideproduktion-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#hjemmesideproduktion-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 #tekstproduktion-ikon {
     grid-area: tekstproduktion;
+    transition: .2s; 
+    width: 70%;  
+}
+
+#tekstproduktion-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#tekstproduktion-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 #foto-ikon {
     grid-area: foto;
+    transition: .2s; 
+    width: 70%;  
+}
+
+#foto-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#foto-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 #video-ikon {
     grid-area: video;
+    transition: .2s; 
+    width: 70%;  
+}
+
+#video-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#video-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 #bmc-ikon {
     grid-area: bmc;
+    transition: .2s;
+    width: 70%;  
+}
+
+#bmc-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#bmc-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 #infografik-ikon {
     grid-area: infografik;
+    transition: .2s; 
+    width: 70%;  
+}
+
+#infografik-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#infografik-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 #logodesign-ikon {
     grid-area: logodesign;
+    transition: .2s; 
+    width: 70%;  
+}
+
+#logodesign-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#logodesign-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 #tryksager-ikon {
     grid-area: tryksager;
+    transition: .2s; 
+    width: 70%;  
+}
+
+#tryksager-ikon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
+}
+
+#tryksager-ikon:focus {
+    transform: scale(1.2);
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+      
 }
 
 .services-section {
+    display: flex;
+    justify-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-                    "hjemmesideproduktion tekstproduktion foto video"
-                    "bmc infografik logodesign tryksager";
+                    "hjemmesideproduktion tekstproduktion foto"
+                    "video bmc infografik"
+                    "logodesign tryksager .";
+}
+
+footer p {
+    font-family: Sansa-Light;
+    text-align: center;
 }
