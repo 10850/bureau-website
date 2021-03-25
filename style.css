@@ -179,6 +179,10 @@ html {
     margin: 0.8em;
 }
 
+h1, h2, h3 {
+    color: rgb(255, 153, 51);
+}
+
 .hero-section video {
     max-width: 100%;
     
@@ -463,4 +467,180 @@ html {
 footer p {
     font-family: Sansa-Light;
     text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+    /* GRID til service section */
+    #hjemmesideproduktion-ikon {
+        width: 45%;     
+    }
+
+
+    #tekstproduktion-ikon {
+        width: 45%;  
+    }
+
+
+    #foto-ikon {
+        width: 45%;  
+    }
+
+
+    #video-ikon {
+        width: 45%;  
+    }
+
+
+    #bmc-ikon {
+        width: 45%;  
+    }
+
+
+    #infografik-ikon {
+        width: 45%;  
+    }
+
+
+    #logodesign-ikon {
+        width: 45%;  
+        
+    }
+
+
+    #tryksager-ikon {
+        width: 45%;  
+
+    }
+
+    #services-section {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .service-tekst {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    /* GRID til service section */
+    #hjemmesideproduktion-ikon {
+        width: 50%;     
+    }
+
+
+    #tekstproduktion-ikon {
+        width: 50%;  
+    }
+
+
+    #foto-ikon {
+        width: 50%;  
+    }
+
+
+    #video-ikon {
+        width: 50%;  
+    }
+
+
+    #bmc-ikon {
+        width: 50%;  
+    }
+
+
+    #infografik-ikon {
+        width: 50%;  
+    }
+
+
+    #logodesign-ikon {
+        width: 50%;  
+        
+    }
+
+
+    #tryksager-ikon {
+        width: 50%;  
+
+    }
+
+    #services-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .service-tekst {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    /* GRID til service section */
+    #hjemmesideproduktion-ikon {
+        width: 60%;     
+    }
+
+
+    #tekstproduktion-ikon {
+        width: 60%;  
+    }
+
+
+    #foto-ikon {
+        width: 60%;  
+    }
+
+
+    #video-ikon {
+        width: 60%;  
+    }
+
+
+    #bmc-ikon {
+        width: 60%;  
+    }
+
+
+    #infografik-ikon {
+        width: 60%;  
+    }
+
+
+    #logodesign-ikon {
+        width: 60%;  
+        
+    }
+
+
+    #tryksager-ikon {
+        width: 60%;  
+
+    }
+
+    #services-section h2 {
+        font-size: 42px;
+    }
+
+    #services-section {
+        padding-left: 160px;
+        padding-right: 160px;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+                "servicetitel servicetitel servicetitel servicetitel "
+                "hjemmesideproduktion tekstproduktion logodesign infografik"
+                "video foto bmc tryksager";
+    }
+
+    .service-tekst {
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
 }
