@@ -434,8 +434,6 @@
 }
 
 footer {
-    border-top-style: solid;
-    padding-top: 1em;
     font-family: Sansa-Light;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
