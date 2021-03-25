@@ -281,12 +281,6 @@ h1, h2, h3 {
     line-height: 23px;
 }
 
-#hjemmesideproduktion-tekst,
-#logodesign-tekst {
-    overflow-y: scroll;
-    height: 400px;
-}
-    
 
 
 /* styling til ikoner */
@@ -491,6 +485,12 @@ h1, h2, h3 {
 }
 
 
+
+#hjemmesideproduktion-tekst,
+#logodesign-tekst {
+    overflow-y: scroll;
+    height: 400px;
+}
 
 /* OM OS */
 #omos-section {
