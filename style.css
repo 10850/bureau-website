@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* FONTS */
 @font-face {
@@ -176,12 +179,19 @@
     margin: 0.8em;
 }
 
-.hero-section video {
+h1, h2, h3 {
+    color: rgb(255, 153, 51);
+}
+
+#hero-section video {
     max-width: 100%;
+    height: 550px;
+    margin: auto;
+    display: flex;
     
 }
 
-.hero-section {
+#hero-section {
     padding-top: 40px;
 }
 
@@ -195,7 +205,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.05); /* Black background with opacity */
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 2; /* putter dette lag forrest */
     cursor: pointer; 
 }
@@ -211,17 +221,15 @@
 }
 
 .overlay-indhold {
+    display: flex;
     position: relative;
-    top: 90px;
+    top: 75px;
     background-color: white;
     margin-left: 0.3em;
     margin-right: 0.3em;
     padding-top: 0.8em;
-    height: 100%;
-}
-
-.service-tekst {
-    margin-left: 20px;
+    margin-top: 0;
+    height: auto;
 }
 
 /* GRID TIL OVERLAY INDHOLD */
@@ -229,7 +237,14 @@
     grid-area: illustration;
 }
 
+.service-illustration svg {
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+}
+
 .service-tekst {
+    -webkit-overflow-scrolling: touch;
     grid-area: tekst;
 }
 
@@ -240,10 +255,28 @@
 .overlay-indhold {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-rows: 0fr 0fr 1fr;
     grid-template-areas: 
                 "luk luk"
-                "illustration tekst";
+                "illustration illustration"
+                "tekst tekst";
+}
+
+.service-tekst {
+    padding: 15px;
+    background-color: rgb(255, 153, 51);
+    color: white;
+    max-height: 100%;
+}
+
+.service-tekst h3 {
+    font-family: Sansa-Bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.service-tekst p {
+    font-family: Sansa-Light;
 }
 
 
@@ -255,25 +288,21 @@
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-bottom: -9px;
 }
 
 .ikon-beskrivelse {
     text-align: center;
-    margin-top: -40px;
     font-family: Sansa-Light;
-    display: none;
+    font-weight: 600;
 }
 
 .foto-desc {
-    margin-top: -60px;
-}
-
-.video-desc {
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .tryk-desc {
-    margin-top: -60px;
+    margin-top: -20px;
 }
 
 
@@ -281,7 +310,8 @@
 #hjemmesideproduktion-ikon {
     grid-area: hjemmesideproduktion;
     transition: .2s; 
-    width: 70%;     
+    width: 75%; 
+    padding: 5px;   
 }
 
 #hjemmesideproduktion-ikon:hover {
@@ -299,7 +329,8 @@
 #tekstproduktion-ikon {
     grid-area: tekstproduktion;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #tekstproduktion-ikon:hover {
@@ -317,7 +348,8 @@
 #foto-ikon {
     grid-area: foto;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #foto-ikon:hover {
@@ -335,7 +367,8 @@
 #video-ikon {
     grid-area: video;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #video-ikon:hover {
@@ -353,7 +386,8 @@
 #bmc-ikon {
     grid-area: bmc;
     transition: .2s;
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #bmc-ikon:hover {
@@ -371,7 +405,8 @@
 #infografik-ikon {
     grid-area: infografik;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #infografik-ikon:hover {
@@ -389,7 +424,9 @@
 #logodesign-ikon {
     grid-area: logodesign;
     transition: .2s; 
-    width: 70%;  
+    width: 75%; 
+    padding: 5px;   
+    
 }
 
 #logodesign-ikon:hover {
@@ -407,7 +444,9 @@
 #tryksager-ikon {
     grid-area: tryksager;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;
+    padding: 5px;  
+
 }
 
 #tryksager-ikon:hover {
@@ -422,18 +461,703 @@
       
 }
 
-.services-section {
+#services-section h2 {
+    text-align: center;
+    font-family: Sansa-Bold;
+    grid-area: servicetitel;
+    font-size: 26px;
+    margin-bottom: -20px;
+}
+
+#services-section {
     display: flex;
     justify-items: center;
     display: grid;
+    row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-                    "hjemmesideproduktion tekstproduktion foto"
-                    "video bmc infografik"
-                    "logodesign tryksager .";
+                    "servicetitel servicetitel servicetitel"
+                    "hjemmesideproduktion tekstproduktion logodesign "
+                    "video foto  infografik"
+                    "bmc tryksager .";
 }
 
-footer p {
+
+
+/* OM OS */
+#omos-section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#omos-section article {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#om-os-billeder div {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#om-os-billeder img {
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    padding: 10px;
+  }
+
+#omos-section p {
     font-family: Sansa-Light;
+    font-weight: 600;
+    line-height: 23px;
+    
+}
+
+#omos-section div p {
+    font-family: Sansa-Bold;
+    font-size: 15px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#omos-section h2 {
+    font-family: Sansa-Bold;
+    text-align: center;
+    font-size: 42px;
+}
+
+#om-os-billeder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+    
+}
+
+
+
+footer {
+    max-width: 100%;
+    color: white;
+    padding: 1em 0em ;
+    background-color: #ff9933;
+    margin-top: 2em;
+    font-family: Sansa-Light;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                    "bjarne bjarne bjarne"
+                    "drescher drescher drescher"
+                    "terkel terkel terkel"
+                    "copyright copyright copyright"
+}
+
+#copyright { 
+    text-align: center;
+    grid-area: copyright;
+    margin-top: 2em;
+}
+
+.kontaktelement {
+    margin: auto;
+    font-weight: 600;
+}
+
+.navn {
+    text-decoration: underline;
+}
+
+#koninfo {
+    font-family: Sansa-Bold; 
+}
+
+#bjarne {
+    grid-area: bjarne;
+    font-size: 14px;
+}
+
+#drescher {
+    grid-area: drescher;
+    font-size: 14px;
+}
+
+#terkel {
+    grid-area: terkel;
+    font-size: 14px;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 480px) {
+    /* GRID til service section */
+    #hjemmesideproduktion-ikon {
+        width: 75%;     
+    }
+
+
+    #tekstproduktion-ikon {
+        width: 75%;  
+    }
+
+
+    #foto-ikon {
+        width: 75%;  
+    }
+
+
+    #video-ikon {
+        width: 65%;   
+    }
+
+
+    #bmc-ikon {
+        width: 75%;   
+    }
+
+
+    #infografik-ikon {
+        width: 75%;   
+    }
+
+
+    #logodesign-ikon {
+        width: 75%;   
+        
+    }
+
+
+    #tryksager-ikon {
+        width: 75%;  
+
+    }
+
+    #services-section {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .service-tekst {
+        padding: 30px;
+    }
+
+
+    /* OM OS */
+#omos-section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#omos-section article {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#om-os-billeder img {
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+  }
+
+#omos-section p {
+    font-family: Sansa-Light;
+    font-weight: 600;
+    line-height: 23px;
+    
+}
+
+#omos-section div p {
+    font-family: Sansa-Bold;
+    font-size: 15px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#omos-section h2 {
+    font-family: Sansa-Bold;
+    text-align: center;
+    font-size: 42px;
+}
+
+#om-os-billeder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+    
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    /* GRID til service section */
+    #hjemmesideproduktion-ikon {
+        width: 50%;     
+    }
+
+
+    #tekstproduktion-ikon {
+        width: 50%;  
+    }
+
+
+    #foto-ikon {
+        width: 50%;  
+    }
+
+
+    #video-ikon {
+        width: 50%;  
+    }
+
+
+    #bmc-ikon {
+        width: 50%;  
+    }
+
+
+    #infografik-ikon {
+        width: 50%;  
+    }
+
+
+    #logodesign-ikon {
+        width: 50%;  
+        
+    }
+
+
+    #tryksager-ikon {
+        width: 50%;  
+
+    }
+
+    #services-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .overlay-indhold {
+        display: flex;
+        position: relative;
+        top: 75px;
+        background-color: white;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        padding-top: 0.8em;
+        margin-top: 0;
+        height: auto;
+    }
+    
+    /* GRID TIL OVERLAY INDHOLD */
+    .service-illustration svg {
+        max-width: 50%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .luk-overlay {
+        grid-area: luk;
+        width: 100%;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 10px;
+        height: 100%;
+        background-color: rgb(255, 153, 51);
+        color: white;
+    }
+    
+    .service-tekst {
+        padding: 0;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-top: 0px;
+        background-color: rgb(255, 153, 51);
+        color: white;
+        height: 100%;
+    }
+    
+    .service-tekst h3 {
+        font-family: Sansa-Bold;
+        margin-bottom: 5px;
+        color: white;
+    }
+    
+    .service-tekst p {
+        font-family: Sansa-Light;
+    }
+
+    .service-illustration {
+        max-width: 100%;
+    }
+
+    .service-illustration svg {
+        max-width: 100%;
+        margin-bottom: auto;
+    }
+
+    .service-tekst {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        background-color: rgb(255, 153, 51);
+        color: white;
+        max-height: 100%;;
+    }
+
+    .service-tekst h3 {
+        color: white;
+    }
+
+    .overlay-indhold {
+        margin-top: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr;
+        grid-template-areas: 
+                    ". luk"
+                    "illustration tekst";
+    }
+
+    .foto-desc {
+        margin-top: -20px;
+    }
+    
+    .tryk-desc {
+        margin-top: -20px;
+    }
+
+            /* OM OS */
+    #omos-section {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    #omos-section article {
+        padding-right: 8em;
+        padding-left: 8em;
+    }
+
+    #om-os-billeder img {
+        border-radius: 50%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    #omos-section p {
+        font-family: Sansa-Light;
+        font-weight: 600;
+        
+    }
+
+    #om-os-billeder div {
+        text-align: center;
+    }
+
+    #omos-section div p {
+        font-family: Sansa-Bold;
+        font-size: 22px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #omos-section h2 {
+        font-family: Sansa-Bold;
+        text-align: center;
+        font-size: 42px;
+    }
+
+    #om-os-billeder {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    /* GRID til service section */
+    #hjemmesideproduktion-ikon {
+        width: 60%;     
+    }
+
+
+    #tekstproduktion-ikon {
+        width: 60%;  
+    }
+
+
+    #foto-ikon {
+        width: 60%;  
+    }
+
+
+    #video-ikon {
+        width: 60%;  
+    }
+
+
+    #bmc-ikon {
+        width: 60%;  
+    }
+
+
+    #infografik-ikon {
+        width: 60%;  
+    }
+
+
+    #logodesign-ikon {
+        width: 60%;  
+        
+    }
+
+
+    #tryksager-ikon {
+        width: 60%;  
+
+    }
+
+    #services-section h2 {
+        font-size: 42px;
+    }
+
+    #services-section {
+        padding-left: 160px;
+        padding-right: 160px;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+                "servicetitel servicetitel servicetitel servicetitel "
+                "hjemmesideproduktion tekstproduktion logodesign infografik"
+                "video foto bmc tryksager";
+    }
+
+    /* GRID TIL OVERLAY INDHOLD */
+    .service-illustration svg {
+        max-width: 50%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .service-tekst {
+        grid-area: tekst;
+    }
+    
+    .luk-overlay {
+        grid-area: luk;
+        width: 100%;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 10px;
+        height: 100%;
+        background-color:transparent;
+        color: black;
+    }
+    
+    .service-tekst {
+        padding: 0;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-top: 0px;
+        background-color: rgb(255, 153, 51);
+        color: white;
+        height: 100%;
+    }
+    
+    .service-tekst h3 {
+        font-family: Sansa-Bold;
+        margin-bottom: 5px;
+        color: white;
+    }
+    
+    .service-tekst p {
+        font-family: Sansa-Light;
+    }
+
+    .service-illustration {
+        max-width: 100%;
+    }
+
+    .service-illustration svg {
+        max-width: 65%;
+        height: auto;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .service-tekst {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        background-color: rgb(255, 153, 51);
+        color: white;
+        font-weight: 600;
+        max-height: 100%;;
+    }
+
+    .service-tekst p {
+        line-height: 23px;
+    }
+
+    .service-tekst h3 {
+        color: white;
+    }
+
+    .overlay-indhold {
+        margin-top: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr;
+        grid-template-areas: 
+                    ". luk"
+                    "illustration tekst";
+    }
+
+    .foto-desc {
+        margin-top: -20px;
+    }
+    
+    .tryk-desc {
+        margin-top: -25px;
+    }
+
+    /* OM OS */
+#omos-section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#omos-section article {
+    padding-right: 8em;
+    padding-left: 8em;
+}
+
+#om-os-billeder img {
+    border-radius: 50%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+#omos-section p {
+    font-family: Sansa-Light;
+    font-weight: 600;
+    
+}
+
+#omos-section h2 {
+    font-family: Sansa-Bold;
+    text-align: center;
+    font-size: 42px;
+}
+
+#omos-section div p {
+    font-family: Sansa-Bold;
+    font-size: 22px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#om-os-billeder {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* FOOTER */
+footer {
+    max-width: 100%;
+    color: white;
+    padding: 1em 0 1em 0;
+    background-color: #ff9933;
+    margin-top: 2em;
+    font-family: Sansa-Light;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+                    "bjarne drescher terkel"
+                    ". copyright ."
+}
+
+#copyright { 
+    text-align: center;
+    grid-area: copyright;
+    margin-top: 2em;
+}
+
+.kontaktelement {
+    margin: auto;
+    font-weight: 600;
+}
+
+.navn {
+    text-decoration: underline;
+}
+
+#koninfo {
+    font-family: Sansa-Bold; 
+}
+
+#bjarne {
+    grid-area: bjarne;
+}
+
+#drescher {
+    grid-area: drescher;
+}
+
+#terkel {
+    grid-area: terkel;
+}
+
+footer li {
+    margin-left: 1em;
+    margin-bottom: 10px;
+}
+
+
 }
