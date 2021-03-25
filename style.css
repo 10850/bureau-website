@@ -486,8 +486,8 @@ h1, h2, h3 {
 }
 
 #omos-section article {
-    padding-right: 5em;
-    padding-left: 5em;
+    padding-right: 8em;
+    padding-left: 8em;
 }
 
 #om-os-billeder img {
@@ -520,13 +520,61 @@ h1, h2, h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
 
-footer p {
+footer {
+    color: white;
+    margin-right: -0.8em;
+    margin-left: -0.8em;
+    margin-bottom: -0.8em;
+    padding: 1em 0 1em 0;
+    background-color: #ff9933;
+    margin-top: 2em;
     font-family: Sansa-Light;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+                    "bjarne drescher terkel"
+                    ". copyright ."
+}
+
+#copyright { 
     text-align: center;
+    grid-area: copyright;
+    margin-top: 2em;
+}
+
+.kontaktelement {
+    margin: auto;
+    font-weight: 600;
+}
+
+.navn {
+    text-decoration: underline;
+}
+
+#koninfo {
+    font-family: Sansa-Bold; 
+}
+
+#bjarne {
+    grid-area: bjarne;
+}
+
+#drescher {
+    grid-area: drescher;
+}
+
+#terkel {
+    grid-area: terkel;
+}
+
+footer li {
+    margin-left: 1em;
 }
 
 @media only screen and (min-width: 480px) {
