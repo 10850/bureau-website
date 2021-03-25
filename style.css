@@ -284,25 +284,21 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-bottom: -9px;
 }
 
 .ikon-beskrivelse {
     text-align: center;
-    margin-top: -40px;
     font-family: Sansa-Light;
-    display: none;
+    font-weight: 600;
 }
 
 .foto-desc {
-    margin-top: -60px;
-}
-
-.video-desc {
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .tryk-desc {
-    margin-top: -60px;
+    margin-top: -30px;
 }
 
 
@@ -310,7 +306,8 @@ h1, h2, h3 {
 #hjemmesideproduktion-ikon {
     grid-area: hjemmesideproduktion;
     transition: .2s; 
-    width: 70%;     
+    width: 75%; 
+    padding: 5px;   
 }
 
 #hjemmesideproduktion-ikon:hover {
@@ -328,7 +325,8 @@ h1, h2, h3 {
 #tekstproduktion-ikon {
     grid-area: tekstproduktion;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #tekstproduktion-ikon:hover {
@@ -346,7 +344,8 @@ h1, h2, h3 {
 #foto-ikon {
     grid-area: foto;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #foto-ikon:hover {
@@ -364,7 +363,8 @@ h1, h2, h3 {
 #video-ikon {
     grid-area: video;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #video-ikon:hover {
@@ -382,7 +382,8 @@ h1, h2, h3 {
 #bmc-ikon {
     grid-area: bmc;
     transition: .2s;
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #bmc-ikon:hover {
@@ -400,7 +401,8 @@ h1, h2, h3 {
 #infografik-ikon {
     grid-area: infografik;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;  
+    padding: 5px;  
 }
 
 #infografik-ikon:hover {
@@ -418,7 +420,8 @@ h1, h2, h3 {
 #logodesign-ikon {
     grid-area: logodesign;
     transition: .2s; 
-    width: 70%;  
+    width: 75%; 
+    padding: 5px;   
     
 }
 
@@ -437,7 +440,8 @@ h1, h2, h3 {
 #tryksager-ikon {
     grid-area: tryksager;
     transition: .2s; 
-    width: 70%;  
+    width: 75%;
+    padding: 5px;  
 
 }
 
@@ -465,6 +469,7 @@ h1, h2, h3 {
     display: flex;
     justify-items: center;
     display: grid;
+    row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
                     "servicetitel servicetitel servicetitel"
@@ -668,6 +673,14 @@ footer p {
                     "illustration tekst";
     }
 
+    .foto-desc {
+        margin-top: -20px;
+    }
+    
+    .tryk-desc {
+        margin-top: -20px;
+    }
+
 }
 
 @media only screen and (min-width: 1025px) {
@@ -808,6 +821,14 @@ footer p {
         grid-template-areas: 
                     ". luk"
                     "illustration tekst";
+    }
+
+    .foto-desc {
+        margin-top: -20px;
+    }
+    
+    .tryk-desc {
+        margin-top: -25px;
     }
 
 
