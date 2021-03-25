@@ -10,11 +10,10 @@
         <link rel="stylesheet" href="menu.css">
     </head>
     <body>  
-        <div id="pagewrap">
             <header>
                 <div id="header-icon-container">
                     <div class="side-logo">
-                        TBD
+                        <a href="#hero-section"><img src="Semu-logo-uden-tekstlinie.png"/></a>
                     </div>
                     <button id="menu-btn">
                         <i class="fas fa-bars"></i>
@@ -26,32 +25,6 @@
                         <ul id="nav-list" class="nav-list" >
                             <li>
                                 <a href="#" class="nav-link droopdown-open" id="serv-opener">Services</a>
-                                <ul class="dropdown-menu-list" id="dropdown-serv">
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-link">Side</a>
-                                    </li>
-                                </ul>
                             </li>
                             <!-- CASES MENU PUNKT - kommenteret ud indtil den skal bruges
                                 <li>
@@ -82,8 +55,12 @@
 
             <!-- Hero section -->
             <section class="hero-section">
-
+                <video autoplay loop>
+                    <source src="Semu.mp4" type="video/mp4">
+                  </video>
             </section>
+
+            <div id="pagewrap">
 
             <!-- Cases section-->
             <!--
@@ -94,8 +71,8 @@
 
             <!-- Services section -->
             <section class="services-section">
-                <div>
-                    <figure class="service-ikon" data_number="1">
+                <div id="hjemmesideproduktion-ikon">
+                    <div class="service-ikon" data-number="1">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                            viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                             <g id="Computer1">
@@ -114,47 +91,48 @@
                                 <path class="st2" d="M315.64,291.77H261.7c-2.39,0-4.33-1.94-4.33-4.33v-22.52c0-2.39,1.94-4.33,4.33-4.33h53.94
                                     c2.39,0,4.33,1.94,4.33,4.33v22.52C319.97,289.83,318.03,291.77,315.64,291.77z"/>
                             </g>
-                            <g id="Computer2">
-                            </g>
-                            <g id="Tekstproduktion">
-                            </g>
-                            <g id="Foto">
-                            </g>
-                            <g id="Film">
-                            </g>
-                            <g id="BMC">
-                            </g>
-                            <g id="Infografik">
-                            </g>
-                            <g id="Logodesign">
-                            </g>
-                            <g id="Tryksager">
-                            </g>
                             </svg>
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
-
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
-
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
+                        </div> <!-- ikon container -->
+                        <p class="ikon-beskrivelse">Hjemmesideproduktion</p>
                 </div> <!-- Ikon 1 og dens overlay indhold -->
+                <!-- overlay til ovenstående ikon -->
+                <div class="overlay" data-number="1">
+                    <section class="overlay-indhold">
+                        <span class="luk-overlay" data-number="1">
+                            X
+                        </span> <!-- luk knap -->
+                        <figure class="service-illustration">
 
-                <div>
-                    <figure class="service-ikon" data_number="1">
+                        </figure> <!-- visuel illustration -->
+                        <article class="service-tekst">
+                            <h3>
+                                Hjemmesideproduktion
+                            </h3>
+                            <p>
+                                Alle virksomheder har behov for en hjemmeside, som kan give eksisterende og potentielle kunder de oplysninger om firmaet og dets produkter/ydelser, de har behov for. 
+                                Hjemmesiden skal være veldesignet og fungere optimalt, uanset om man betragter den på en computer, en tablet eller en mobiltelefon. 
+                                Det giver brugeren lyst til at komme tilbage til siden. SEO-optimering er også meget vigtigt for din hjemmeside. 
+                                Det betyder at siden er let at finde for søgemaskiner som Google. og at siden bliver vist i starten af Googles liste. 
+                                Det øger chancen at for dine potentielle kunder bliver ledt til din hjemmeside og ikke til konkurrenternes. 
+                            </p>
+                            <p>
+                                Her hos Semu kan vi give dig en hjemmeside, som opfylder alle disse krav. 
+                                Uanset om du har en lille nystartet virksomhed eller du repræsenterer et veletableret firma, kan vi lave hjemmesiden for dig. 
+                                Vi kan lave den, så du selv kan indsætte nye billeder og tekster, når du har noget nyt at vise frem (CMS-system). 
+                                Eller vi kan sørge for, at du ikke skal gøre noget som helst for at have en velfungerende hjemmeside, 
+                                så du i stedet kan koncentrere dig om dit arbejde.
+                            </p>
+                        </article> <!-- tekst -->
+                    </section> <!-- indholdet -->
+                </div> <!-- overlay med opacity -->
+
+
+
+
+                <div id="tekstproduktion-ikon">
+                    <div class="service-ikon" data-number="2">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                            <g id="Computer1">
-                            </g>
-                            <g id="Computer2">
-                            </g>
                             <g id="Tekstproduktion">
                                 <path id="Papir" class="st0" d="M345.78,402.6H155.97c-8.21,0-14.87-6.66-14.87-14.87V132.51c0-8.21,6.66-14.87,14.87-14.87h189.81
                                     c8.21,0,14.87,6.66,14.87,14.87v255.23C360.65,395.94,353.99,402.6,345.78,402.6z"/>
@@ -185,45 +163,32 @@
                                     </g>
                                 </g>
                             </g>
-                                <g id="Foto">
-                                </g>
-                                <g id="Film">
-                                </g>
-                                <g id="BMC">
-                                </g>
-                                <g id="Infografik">
-                                </g>
-                                <g id="Logodesign">
-                                </g>
-                                <g id="Tryksager">
-                                </g>
                             </svg>
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
-
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
-
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
+                        </div> <!-- ikon container -->
+                        <p class="ikon-beskrivelse">Tekstproduktion</p>
                 </div> <!-- Ikon 2 og dens overlay indhold -->
+                <!-- overlay til ovenstående ikon -->
+                <div class="overlay" data-number="2">
+                    <section class="overlay-indhold">
+                        <span class="luk-overlay" data-number="2">
+                            X
+                        </span> <!-- luk knap -->
+                        <figure class="service-illustration">
 
-                <div>
-                    <figure class="service-ikon" data_number="1">
+                        </figure> <!-- visuel illustration -->
+                        <article class="service-tekst">
+                            TEST 2
+                        </article> <!-- tekst -->
+                    </section> <!-- indholdet -->
+                </div> <!-- overlay med opacity -->
+
+
+
+
+                <div id="foto-ikon">
+                    <div class="service-ikon" data-number="3">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                            <g id="Computer1">
-                            </g>
-                            <g id="Computer2">
-                            </g>
-                            <g id="Tekstproduktion">
-                            </g>
                             <g id="Foto">
                                 <path class="st0" d="M385.2,354.17H114.8c-17.34,0-31.39-14.05-31.39-31.39V183.21c0-17.34,14.05-31.39,31.39-31.39h270.4
                                     c17.34,0,31.39,14.05,31.39,31.39v139.58C416.59,340.12,402.54,354.17,385.2,354.17z"/>
@@ -234,128 +199,295 @@
                                 <path class="st0" d="M159.6,140.52h-32.72c-2.4,0-4.34,1.95-4.34,4.34v3.18h41.41v-3.18C163.94,142.47,162,140.52,159.6,140.52z"/>
                                 <circle class="st9" cx="142.53" cy="191.35" r="6.12"/>
                             </g>
+                        </svg>
+                    </div> <!-- ikon container -->
+                    <p class="ikon-beskrivelse foto-desc">Fotografering</p>
+                </div> <!-- Ikon 3 og dens overlay indhold -->
+                <!-- Overlay til ovenstående ikon -->
+                <div class="overlay" data-number="3">
+                    <section class="overlay-indhold">
+                        <span class="luk-overlay" data-number="3">
+                            X
+                        </span> <!-- luk knap -->
+                        <figure class="service-illustration">
+
+                        </figure> <!-- visuel illustration -->
+                        <article class="service-tekst">
+
+                        </article> <!-- tekst -->
+                    </section> <!-- indholdet -->
+                </div> <!-- overlay med opacity -->
+
+
+
+
+
+                <div id="video-ikon">
+                    <div class="service-ikon" data-number="4">
+                        <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                             <g id="Film">
+                                <g id="Kamera">
+                                    <path id="Linse" class="st10" d="M422.28,231.9l-122.44,70.35c-13.32,7.65-13.36,26.85-0.07,34.56l122.14,70.86
+                                        c13.29,7.71,29.93-1.86,29.97-17.22l0.3-141.21C452.21,233.88,435.6,224.25,422.28,231.9l-122.44,70.35
+                                        c-13.32,7.65-13.36,26.85-0.07,34.56l122.14,70.86c13.29,7.71,29.93-1.86,29.97-17.22l0.3-141.21
+                                        C452.21,233.88,435.6,224.25,422.28,231.9z"/>
+                                    <path id="Kasse" class="st0" d="M358.97,246.81v135.15c0,17.79-14.42,32.21-32.21,32.21H96.5c-17.79,0-32.21-14.42-32.21-32.21
+                                        V246.81c0-7.09,2.3-13.66,6.18-18.98c5.86-8.03,15.34-13.24,26.03-13.24h230.26c10.69,0,20.17,5.21,26.03,13.24
+                                        C356.67,233.15,358.97,239.72,358.97,246.81z"/>
+                                    <path class="st11" d="M233.52,214.59h-43.78c13.64-15.6,21.89-36.01,21.89-58.34C211.63,178.58,219.88,198.99,233.52,214.59z"/>
+                                    <g id="Filmhjul">
+                                        <path class="st10" d="M211.63,156.25c0,22.33-8.25,42.74-21.89,58.34c-16.25,18.62-40.17,30.39-66.84,30.39
+                                            c-19.61,0-37.74-6.36-52.43-17.15c-22.01-16.14-36.3-42.19-36.3-71.58c0-49.01,39.72-88.74,88.73-88.74
+                                            C171.9,67.51,211.63,107.24,211.63,156.25z"/>
+                                        <path class="st10" d="M389.1,156.25c0,29.39-14.29,55.45-36.31,71.58c-14.69,10.79-32.82,17.15-52.43,17.15
+                                            c-26.67,0-50.59-11.77-66.84-30.39c-13.64-15.6-21.89-36.01-21.89-58.34c0-49.01,39.73-88.74,88.73-88.74
+                                            C349.37,67.51,389.1,107.24,389.1,156.25z"/>
+                                        <circle class="st10" cx="122.9" cy="156.25" r="26.16"/>
+                                        <circle class="st10" cx="300.36" cy="156.25" r="26.16"/>
+                                    </g>
+                                </g>
                             </g>
+                            
+                            </svg>
+                        </svg>
+                    </div> <!-- ikon container -->
+                    <p class="ikon-beskrivelse video-desc">Videoproduktion</p>
+                </div> <!-- Ikon 4 og dens overlay indhold -->
+                <!-- Overlay til ovenstående ikon -->
+                <div class="overlay" data-number="4">
+                    <section class="overlay-indhold">
+                        <span class="luk-overlay" data-number="4">
+                            X
+                        </span> <!-- luk knap -->
+                        <figure class="service-illustration">
+
+                        </figure> <!-- visuel illustration -->
+                        <article class="service-tekst">
+
+                        </article> <!-- tekst -->
+                    </section> <!-- indholdet -->
+                </div> <!-- overlay med opacity -->
+
+
+                
+
+                <div id="bmc-ikon">
+                    <div class="service-ikon" data-number="5">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                             <g id="BMC">
-                            </g>
-                            <g id="Infografik">
-                            </g>
-                            <g id="Logodesign">
-                            </g>
-                            <g id="Tryksager">
+                                <path class="st6" d="M126.77,311.89H44.81V122.52c0-8.28,6.72-15,15-15h66.96V311.89z"/>
+                                <rect x="126.77" y="107.52" class="st6" width="81.96" height="204.37"/>
+                                <rect x="290.98" y="107.52" class="st6" width="81.96" height="204.37"/>
+                                <path class="st6" d="M454.9,311.89h-81.96V107.52h66.96c8.28,0,15,6.72,15,15V311.89z"/>
+                                <line class="st2" x1="126.77" y1="209.7" x2="372.94" y2="209.7"/>
+                                <rect x="209.02" y="107.52" class="st6" width="81.96" height="204.37"/>
+                                <path class="st6" d="M250,311.89H44.81v66.8c0,8.28,6.72,15,15,15H250V311.89z"/>
+                                <path class="st6" d="M250,311.89h205.19v66.8c0,8.28-6.72,15-15,15H250V311.89z"/>
+                                <rect x="58.07" y="140.48" class="st11" width="396.83" height="146.19"/>
+                                <text transform="matrix(1 0 0 1 58.0703 281.1635)" class="st12 st13 st14">BMC</text>
+                                <path class="st15" d="M440.32,393.69H59.68c-8.21,0-14.87-6.66-14.87-14.87V122.39c0-8.21,6.66-14.87,14.87-14.87h380.64
+                                    c8.21,0,14.87,6.66,14.87,14.87v256.44C455.19,387.03,448.53,393.69,440.32,393.69z"/>
                             </g>
                         </svg>
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
-
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
-
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
-                </div> <!-- Ikon 3 og dens overlay indhold -->
-
-                <div>
-                    <figure class="service-ikon" data_number="1">
-                        
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
-
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
-
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
-                </div> <!-- Ikon 4 og dens overlay indhold -->
-
-                <div>
-                    <figure class="service-ikon" data_number="1">
-                        
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
-
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
-
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
+                    </div> <!-- ikon container -->
+                    <p class="ikon-beskrivelse">BMC</p>
                 </div> <!-- Ikon 5 og dens overlay indhold -->
+                <!-- Overlay til ovenstående ikon -->
+                <div class="overlay" data-number="5">
+                    <section class="overlay-indhold">
+                        <span class="luk-overlay" data-number="5">
+                            X
+                        </span> <!-- luk knap -->
+                        <figure class="service-illustration">
 
-                <div>
-                    <figure class="service-ikon" data_number="1">
-                        
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
+                        </figure> <!-- visuel illustration -->
+                        <article class="service-tekst">
 
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
+                        </article> <!-- tekst -->
+                    </section> <!-- indholdet -->
+                </div> <!-- overlay med opacity -->
 
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
+
+
+
+                <div id="infografik-ikon">
+                    <div class="service-ikon" data-number="6">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                        <g id="Infografik">
+                            <path id="Papir_1_" class="st0" d="M344.91,392.48H155.09c-8.21,0-14.87-6.66-14.87-14.87V122.39c0-8.21,6.66-14.87,14.87-14.87
+                                h189.81c8.21,0,14.87,6.66,14.87,14.87v255.23C359.77,385.82,353.12,392.48,344.91,392.48z"/>
+                            <g>
+                                <line class="st4" x1="165.79" y1="143.55" x2="237.97" y2="143.55"/>
+                                <line class="st4" x1="165.79" y1="166.14" x2="237.97" y2="166.14"/>
+                                <line class="st4" x1="165.79" y1="188.72" x2="237.97" y2="188.72"/>
+                                <line class="st4" x1="165.79" y1="211.3" x2="237.97" y2="211.3"/>
+                                <line class="st4" x1="165.79" y1="233.88" x2="237.97" y2="233.88"/>
+                            </g>
+                            <line class="st4" x1="165.79" y1="354.31" x2="257.66" y2="354.31"/>
+                            <line class="st4" x1="165.79" y1="354.31" x2="165.79" y2="257.7"/>
+                            <path class="st12" d="M230.49,289.91h15.78c2.06,0,3.73,1.48,3.73,3.31v61.1h-23.24v-61.1
+                                C226.76,291.39,228.43,289.91,230.49,289.91z"/>
+                            <path class="st12" d="M204.67,322.11h15.78c2.06,0,3.73,1.48,3.73,3.31v28.9h-23.24v-28.9
+                                C200.93,323.59,202.6,322.11,204.67,322.11z"/>
+                            <path class="st12" d="M178.84,257.7h15.78c2.06,0,3.73,1.48,3.73,3.31v93.3h-23.24v-93.3C175.11,259.19,176.78,257.7,178.84,257.7z
+                                "/>
+                            <g>
+                                <line class="st4" x1="271.25" y1="257.7" x2="343.43" y2="257.7"/>
+                                <line class="st4" x1="271.25" y1="280.25" x2="343.43" y2="280.25"/>
+                                <line class="st4" x1="271.25" y1="302.8" x2="343.43" y2="302.8"/>
+                                <line class="st4" x1="271.25" y1="325.35" x2="343.43" y2="325.35"/>
+                                <line class="st4" x1="271.25" y1="347.9" x2="343.43" y2="347.9"/>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M300.29,188.72l-37.37,21.57c-11.91-20.64-4.84-47.02,15.79-58.94c6.87-3.97,13.64-5.78,21.57-5.78V188.72z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M300.29,188.72l37.37,21.57c-11.91,20.64-38.3,27.71-58.94,15.79c-6.87-3.97-11.82-8.92-15.79-15.79L300.29,188.72z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M300.29,188.72v-43.15c23.83,0,43.15,19.32,43.15,43.15c0,7.93-1.81,14.7-5.78,21.57L300.29,188.72z"/>
+                                </g>
+                            </g>
+                            <circle class="st10" cx="300.29" cy="188.72" r="21.57"/>
+                            <g>
+                                <line class="st13" x1="300.29" y1="139.19" x2="300.29" y2="188.72"/>
+                                <line class="st13" x1="300.29" y1="188.72" x2="346.45" y2="215.37"/>
+                                <line class="st13" x1="300.29" y1="188.72" x2="253.12" y2="215.95"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div> <!-- ikon container -->
+                    <p class="ikon-beskrivelse">Infografik</p>
                 </div> <!-- Ikon 6 og dens overlay indhold -->
+                <!-- overlay til ovenstående ikon -->
+                <div class="overlay" data-number="6">
+                    <section class="overlay-indhold">
+                        <span class="luk-overlay" data-number="6">
+                            X
+                        </span> <!-- luk knap -->
+                        <figure class="service-illustration">
 
-                <div>
-                    <figure class="service-ikon" data_number="1">
-                        
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
+                        </figure> <!-- visuel illustration -->
+                        <article class="service-tekst">
 
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
+                        </article> <!-- tekst -->
+                    </section> <!-- indholdet -->
+                </div> <!-- overlay med opacity -->
 
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
+                <div id="logodesign-ikon">
+                    <div class="service-ikon" data-number="7">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                            <g id="Logodesign">
+                                <g id="Baggrund_1_">
+                                    
+                                        <ellipse transform="matrix(0.539 -0.8423 0.8423 0.539 -78.0102 405.0999)" class="st10" cx="331.07" cy="273.82" rx="62.96" ry="30.29"/>
+                                    
+                                        <ellipse transform="matrix(0.8028 -0.5963 0.5963 0.8028 -62.9344 241.0659)" class="st10" cx="332.96" cy="215.67" rx="30.29" ry="62.96"/>
+                                    <polygon class="st10" points="139.38,292.5 247.41,398.96 355.44,292.5 139.38,292.5 247.41,398.96 355.44,292.5 		"/>
+                                    <ellipse class="st10" cx="148.5" cy="229.53" rx="30.29" ry="62.96"/>
+                                    <rect x="148.5" y="186.08" class="st10" width="203.01" height="119.94"/>
+                                    
+                                        <rect x="146.01" y="164.68" transform="matrix(0.9777 -0.2099 0.2099 0.9777 -33.9045 41.067)" class="st10" width="60.93" height="31.08"/>
+                                    <polygon class="st10" points="248.67,100.5 225.95,139.86 271.4,139.86 248.67,100.5 225.95,139.86 271.4,139.86 		"/>
+                                    <circle class="st10" cx="250" cy="189.3" r="56.75"/>
+                                </g>
+                                <g id="Pensel_1_">
+                                    <path id="Børste" class="st14" d="M355.11,200.53c-8.51,4.73-11.19,3.98-17.31,11.26c-1.24,1.48-2.5,5.77-2.4,6.29
+                                        c0.21,1.08-0.78-1.98-1.1-3.87c-0.63-3.7-4.23-18.87,3.84-27.73c5.34-5.86,16.59-8.69,22.48-3.42
+                                        C366.51,188.32,362.06,196.67,355.11,200.53z"/>
+                                    <path id="Krop_1_" class="st3" d="M424.57,107.73L424.57,107.73c0.37,0.32,0.09,1.21-0.61,1.99l-78.83,87.29
+                                        c-0.7,0.78-1.76,0.93-2.13,0.61l0,0c-0.37-0.32-0.3-1.43,0.41-2.2l79.23-86.86C423.34,107.77,424.2,107.4,424.57,107.73z"/>
+                                </g>
+                                <g id="Logo2">
+                                    <path id="Baggrund" class="st11" d="M378.77,229.53c0.07,1.26,0.07,2.48,0.07,3.74c0,64.11-104.71,144.07-127.21,160.51
+                                        c-2.51,1.84-5.93,1.84-8.45,0c-22.49-16.44-127.21-96.4-127.21-160.51c0-24.75,7.01-47.9,19.17-67.57c0.12-0.2,0.36-0.3,0.59-0.25
+                                        c6.17,1.31,12.55,1.97,19.1,1.97c40.34,0,74.66-25.47,87.42-61.04c1.5-1.06,2.92-2.06,4.42-3.12c2.1-0.01,4.21,0.02,6.27,0.13
+                                        c0.12,0.01,0.23,0.09,0.27,0.21c8.4,25.99,28.18,46.95,53.53,57.1"/>
+                                    <line id="Tekst" class="st4" x1="171.93" y1="215.67" x2="322.88" y2="215.67"/>
+                                    <ellipse id="Cirkel" class="st15" cx="247.41" cy="294.38" rx="40.2" ry="39.77"/>
+                                    <g id="Afrunding">
+                                        <ellipse cx="306.75" cy="160.69" rx="5.33" ry="5.27"/>
+                                        <ellipse cx="378.77" cy="229.53" rx="5.24" ry="5.19"/>
+                                    </g>
+                                </g>
+                                <ellipse cx="244.73" cy="104.32" rx="7.28" ry="6.54"/>
+                                <rect x="247.26" y="108.76" class="st10" width="1.93" height="2.46"/>
+                                
+                                    <rect x="246.76" y="109.03" transform="matrix(0.9388 0.3444 -0.3444 0.9388 53.1385 -78.5952)" class="st10" width="2.05" height="2.46"/>
+                                
+                                    <rect x="247.65" y="109.04" transform="matrix(0.9329 -0.3602 0.3602 0.9329 -23.0288 96.9891)" class="st10" width="2.05" height="2.46"/>
+                            </g>
+                        </svg>
+                    </div> <!-- ikon container -->
+                    <p class="ikon-beskrivelse">Logodesign</p>
                 </div> <!-- Ikon 7 og dens overlay indhold -->
+                <!-- overlay til ovenstående ikon -->
+                <div class="overlay" data-number="7">
+                    <section class="overlay-indhold">
+                        <span class="luk-overlay" data-number="7">
+                            X
+                        </span> <!-- luk knap -->
+                        <figure class="service-illustration">
 
-                <div>
-                    <figure class="service-ikon" data_number="1">
-                        
-                    </figure> <!-- ikon container -->
-                    <div class="overlay" data_number="1">
-                        <section class="overlay-indhold">
-                            <span class="luk-overlay" data_number="1">
-                                X
-                            </span> <!-- luk knap -->
-                            <figure class="service-illustration">
+                        </figure> <!-- visuel illustration -->
+                        <article class="service-tekst">
 
-                            </figure> <!-- visuel illustration -->
-                            <article class="service-tekst">
+                        </article> <!-- tekst -->
+                    </section> <!-- indholdet -->
+                </div> <!-- overlay med opacity -->
 
-                            </article> <!-- tekst -->
-                        </section> <!-- indholdet -->
-                    </div> <!-- overlay med opacity -->
+
+
+
+                <div id="tryksager-ikon">
+                    <div class="service-ikon" data-number="8">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                            <g id="Tryksager">
+                                <path id="Papir_2_" class="st0" d="M107.52,333.74V166.26c0-8.21,6.66-14.87,14.87-14.87h255.23c8.21,0,14.87,6.66,14.87,14.87
+                                    v167.47c0,8.21-6.66,14.87-14.87,14.87H122.39C114.18,348.6,107.52,341.95,107.52,333.74z"/>
+                                <path class="st6" d="M190.45,244.72h-44.02c-8.25,0-14.94-6.69-14.94-14.94v-44.02c0-8.25,6.69-14.94,14.94-14.94h44.02
+                                    c8.25,0,14.94,6.69,14.94,14.94v44.02C205.39,238.03,198.71,244.72,190.45,244.72z"/>
+                                <ellipse cx="168.45" cy="205.77" rx="21.7" ry="26.58"/>
+                                <polygon points="179.62,242.59 157.38,242.59 154.63,214.11 181.81,214.11 	"/>
+                                <line class="st4" x1="264.28" y1="177.19" x2="366.53" y2="177.19"/>
+                                <line class="st4" x1="264.44" y1="201.77" x2="366.7" y2="201.77"/>
+                                <line class="st4" x1="264.44" y1="226.35" x2="366.7" y2="226.35"/>
+                                <line class="st4" x1="264.44" y1="250.74" x2="366.7" y2="250.74"/>
+                                <line class="st4" x1="130.58" y1="275.12" x2="365.78" y2="275.12"/>
+                                <line class="st4" x1="130.66" y1="298.24" x2="365.7" y2="298.24"/>
+                                <line class="st4" x1="130.66" y1="321.35" x2="365.7" y2="321.35"/>
+                            </g>
+                        </svg>
+                    </div> <!-- ikon container -->
+                    <p class="ikon-beskrivelse tryk-desc">Tryksager</p>
                 </div> <!-- Ikon 8 og dens overlay indhold -->
             </section>
+            <!-- Overlay til ovenstående ikon -->
+            <div class="overlay" data-number="8">
+                <section class="overlay-indhold">
+                    <span class="luk-overlay" data-number="8">
+                        X
+                    </span> <!-- luk knap -->
+                    <figure class="service-illustration">
+
+                    </figure> <!-- visuel illustration -->
+                    <article class="service-tekst">
+
+                    </article> <!-- tekst -->
+                </section> <!-- indholdet -->
+            </div> <!-- overlay med opacity -->
 
             
 
@@ -366,7 +498,8 @@
 
             <!-- footeren -->
             <footer>
-
+                
+                <p id="copyright">&#169;SEMU 2021</p>
             </footer>
         </div>
     </body>

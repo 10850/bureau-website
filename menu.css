@@ -4,23 +4,45 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Sansa-Bold;
+    src: url("sansa-font/SANSB___.TTF")
+}
+
+@font-face {
+    font-family: Sansa-Light;
+    src: url("sansa-font/SANSL___.TTF")
+}
+
 header * {
-    color: white;
+    color: black;
+    font-family: Sansa-Bold;
+    background-color: white;
+    
+}
+
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
 }
 
 #header-icon-container {
     max-width: 100%;
-    background-color: #1b1b1b;
+    background-color: white;
     display: flex;
     grid-area: header-icons;
 }
 
 .side-logo {
     float: left;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 70px;
     margin-left: 15px;
+    max-width: 120px;
+}
+
+.side-logo img {
+    max-width: 100%;
+    margin-top: 10px;
 }
 
 #menu-btn {
@@ -37,7 +59,7 @@ header * {
 }
 
 #menu-lists-container {
-    background-color: #1b1b1b;
+    background-color:white;
     height: 87vh;
     width: 100%;
     z-index: 99;
@@ -62,7 +84,7 @@ header * {
 }
 
 .global-menu a:focus {
-    color: cyan;
+    color: rgb(255, 153, 51) ;
 }
 
 .global-menu .dropdown-link {
@@ -128,7 +150,7 @@ header * {
     }
     
     .global-menu a:hover {
-        color: cyan;
+        color: rgb(255, 153, 51);
     }
     
     .global-menu .dropdown-link {
@@ -136,7 +158,9 @@ header * {
     }
 
     .global-menu .dropdown-menu-list {
-        background-color: #1b1b1b;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-top: none;
     }
     
     .global-menu .dropdown-menu-list .dropdown-link {
@@ -145,7 +169,6 @@ header * {
         width: 150px;
         float: none;
         display: list-item;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     }
 
     .global-menu #dropdown-serv {
@@ -185,11 +208,14 @@ header * {
       }
 
     header {
-        background-color: #1b1b1b;
+        background-color: white;
         display: grid;
         grid-template-columns: 0.7fr 1fr;
         grid-template-areas: 
                         "header-icons menuliste";
+    }
+    .global-menu .dropdown-menu-list .border-none .dropdown-link  {
+        border-bottom: none;
     }
 }
 
