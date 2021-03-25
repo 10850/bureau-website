@@ -17,23 +17,8 @@ if(screen.width < 768 ) {
         }
     });
 
-    
-
-    // åben dropdown on clicks
-    const servOpener = document.getElementById("serv-opener");
-    const dropdownServ = document.getElementById('dropdown-serv');
-    let dropdownOpen2 = false;
-
-    servOpener.addEventListener('click', () => {
-        if (dropdownOpen2 == false){
-            dropdownServ.style.display = "list-item";
-            dropdownOpen2 = true;
-        } else {
-            dropdownServ.style.display = "none";
-            dropdownOpen2 = false;
-        }
-    })
 }
+
     
     //const casesOpener = document.getElementById("cases-opener");
     //const dropdownCases = document.getElementById('dropdown-cases');
