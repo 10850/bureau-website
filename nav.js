@@ -17,21 +17,23 @@ if(screen.width < 768 ) {
 
     // åben dropdown on click
     const servOpener = document.getElementById("serv-opener");
-    const casesOpener = document.getElementById("cases-opener");
     const dropdownServ = document.getElementById('dropdown-serv');
-    const dropdownCases = document.getElementById('dropdown-cases');
-    let dropdownOpen1 = false;
     let dropdownOpen2 = false;
+    
+    //const casesOpener = document.getElementById("cases-opener");
+    //const dropdownCases = document.getElementById('dropdown-cases');
+    //let dropdownOpen1 = false;
+    
 
-    casesOpener.addEventListener('click', () => {
-            if (dropdownOpen1 == false){
-                dropdownCases.style.display = "list-item";
-                dropdownOpen1 = true;
-            } else {
-                dropdownCases.style.display = "none";
-                dropdownOpen1 = false;
-            }
-        })
+    //casesOpener.addEventListener('click', () => {
+    //       if (dropdownOpen1 == false){
+    //          dropdownCases.style.display = "list-item";
+    //          dropdownOpen1 = true;
+    //      } else {
+    //          dropdownCases.style.display = "none";
+    //          dropdownOpen1 = false;
+    //      }
+    // })
 
     servOpener.addEventListener('click', () => {
             if (dropdownOpen2 == false){
