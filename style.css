@@ -277,6 +277,8 @@ h1, h2, h3 {
 
 .service-tekst p {
     font-family: Sansa-Light;
+    font-weight: 600;
+    line-height: 23px;
 }
 
 
@@ -982,8 +984,8 @@ footer li {
         padding-right: 15px;
         padding-top: 10px;
         height: 100%;
-        background-color:transparent;
-        color: black;
+        background-color: rgb(255, 153, 51);
+        color: white;
     }
     
     .service-tekst {
@@ -1005,6 +1007,7 @@ footer li {
     
     .service-tekst p {
         font-family: Sansa-Light;
+        line-height: 23px;
     }
 
     .service-illustration {
