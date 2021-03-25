@@ -478,6 +478,52 @@ h1, h2, h3 {
                     "bmc tryksager .";
 }
 
+
+
+/* OM OS */
+#omos-section {
+    margin-top: 5em;
+}
+
+#omos-section article {
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+#om-os-billeder img {
+    border-radius: 50%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+#omos-section p {
+    font-family: Sansa-Light;
+    font-weight: 600;
+    
+}
+
+#omos-section blockquote {
+    font-family: Sansa-Bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+#omos-section h2 {
+    font-family: Sansa-Bold;
+    text-align: center;
+    font-size: 42px;
+}
+
+#om-os-billeder {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
 footer p {
     font-family: Sansa-Light;
     text-align: center;
