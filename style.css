@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* FONTS */
 @font-face {
@@ -243,7 +246,20 @@
     grid-template-rows: 0fr 1fr;
     grid-template-areas: 
                 "luk luk"
-                "illustration tekst";
+                "tekst tekst";
+}
+
+.service-tekst {
+    padding: 8px 0px;
+}
+
+.service-tekst h3 {
+    font-family: Sansa-Bold;
+    margin-bottom: 5px;
+}
+
+.service-tekst p {
+    font-family: Sansa-Light;
 }
 
 
@@ -390,6 +406,7 @@
     grid-area: logodesign;
     transition: .2s; 
     width: 70%;  
+    
 }
 
 #logodesign-ikon:hover {
@@ -408,6 +425,7 @@
     grid-area: tryksager;
     transition: .2s; 
     width: 70%;  
+
 }
 
 #tryksager-ikon:hover {
@@ -422,15 +440,24 @@
       
 }
 
-.services-section {
+#services-section h2 {
+    text-align: center;
+    font-family: Sansa-Bold;
+    grid-area: servicetitel;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+#services-section {
     display: flex;
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-                    "hjemmesideproduktion tekstproduktion foto"
-                    "video bmc infografik"
-                    "logodesign tryksager .";
+                    "servicetitel servicetitel servicetitel"
+                    "hjemmesideproduktion tekstproduktion logodesign "
+                    "video foto  infografik"
+                    "bmc tryksager .";
 }
 
 footer p {
