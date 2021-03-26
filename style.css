@@ -484,6 +484,18 @@ h1, h2, h3 {
                     "bmc tryksager .";
 }
 
+#services-section h2 {
+    color: white;
+}
+
+#services-section {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    margin-right: -0.8em;
+    margin-left: -0.8em;
+    background-color: rgba(255, 153, 51, 1);
+}
+
 
 
 #hjemmesideproduktion-tekst,
@@ -494,7 +506,7 @@ h1, h2, h3 {
 
 /* OM OS */
 #omos-section {
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 5em;
 }
 
@@ -526,8 +538,10 @@ h1, h2, h3 {
 }
 
 #omos-section div p {
-    font-family: Sansa-Bold;
+    font-family: Sansa-Light;
     font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -538,7 +552,7 @@ h1, h2, h3 {
 #omos-section h2 {
     font-family: Sansa-Bold;
     text-align: center;
-    font-size: 42px;
+    font-size: 26px;
 }
 
 #om-os-billeder {
@@ -546,7 +560,7 @@ h1, h2, h3 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
     
 }
 
@@ -661,9 +675,21 @@ p {
 
     }
 
+    #services-section h2 {
+        color: white;
+    }
+
     #services-section {
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+        margin-right: -0.8em;
+        margin-left: -0.8em;
+        background-color: rgba(255, 153, 51, 1);
+    }
+
+    #services-section {
+        padding-left: 50px;
+        padding-right: 50px;
     }
     
     .service-tekst {
@@ -673,7 +699,7 @@ p {
 
     /* OM OS */
 #omos-section {
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 5em;
 }
 
@@ -711,7 +737,7 @@ p {
 #omos-section h2 {
     font-family: Sansa-Bold;
     text-align: center;
-    font-size: 42px;
+    font-size: 26px;
 }
 
 #om-os-billeder {
@@ -871,6 +897,19 @@ p {
         margin-top: -20px;
     }
 
+    /* SERVICE BACKGROUND */
+    #services-section h2 {
+        color: white;
+    }
+
+    #services-section {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-right: -0.8em;
+        margin-left: -0.8em;
+        background-color: rgba(255, 153, 51, 1);
+    }
+
             /* OM OS */
     #omos-section h2 {
         font-size: 26px;
@@ -903,8 +942,9 @@ p {
     }
 
     #omos-section div p {
-        font-family: Sansa-Bold;
-        font-size: 22px;
+        font-family: Sansa-Light;
+        font-size: 18px;
+        font-style: italic;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
@@ -978,9 +1018,16 @@ p {
 
     #services-section h2 {
         font-size: 42px;
+        color: white;
+
     }
 
     #services-section {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-right: -0.8em;
+        margin-left: -0.8em;
+        background-color: rgba(255, 153, 51, 1);
         padding-left: 160px;
         padding-right: 160px;
         grid-row-gap: 30px;
@@ -1122,8 +1169,9 @@ p {
 }
 
 #omos-section div p {
-    font-family: Sansa-Bold;
-    font-size: 20px;
+    font-family: Sansa-Light;
+    font-size: 18px;
+    font-style: italic;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
