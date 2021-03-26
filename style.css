@@ -607,6 +607,10 @@ footer li {
     margin-bottom: 10px;
 }
 
+p {
+    letter-spacing: 1.3px;
+}
+
 
 @media only screen and (min-width: 480px) {
     #hjemmesideproduktion-tekst,
@@ -843,6 +847,7 @@ footer li {
 
     .service-tekst h3 {
         color: white;
+        font-size: 28px;
     }
 
     .overlay-indhold {
@@ -916,6 +921,10 @@ footer li {
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    p {
+        letter-spacing: 1.3px;
     }
 
 }
@@ -1050,6 +1059,7 @@ footer li {
 
     .service-tekst h3 {
         color: white;
+        font-size: 28px;
     }
 
     .overlay-indhold {
@@ -1066,11 +1076,15 @@ footer li {
     }
 
     .foto-desc {
-        margin-top: -20px;
+        margin-top: -25px;
     }
     
     .tryk-desc {
-        margin-top: -25px;
+        margin-top: -28px;
+    }
+
+    .bmc-desc {
+        margin-top: -20px;
     }
 
     /* OM OS */
@@ -1090,9 +1104,10 @@ footer li {
     margin-top: 20px;
   }
 
-#omos-section p {
+#om-os-billeder p {
     font-family: Sansa-Light;
     font-weight: 600;
+    font-size: 18px;
     
 }
 
@@ -1104,7 +1119,7 @@ footer li {
 
 #omos-section div p {
     font-family: Sansa-Bold;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -1147,6 +1162,7 @@ footer {
 .kontaktelement {
     margin: auto;
     font-weight: 600;
+    
 }
 
 .navn {
@@ -1154,19 +1170,22 @@ footer {
 }
 
 #koninfo {
-    font-family: Sansa-Bold; 
+    font-family: Sansa-Light; 
 }
 
 #bjarne {
     grid-area: bjarne;
+    font-size: 16px;
 }
 
 #drescher {
     grid-area: drescher;
+    font-size: 16px;
 }
 
 #terkel {
     grid-area: terkel;
+    font-size: 16px;
 }
 
 footer li {
