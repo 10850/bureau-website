@@ -575,12 +575,20 @@ footer {
     font-family: Sansa-Light;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
+                    "kontaktos kontaktos kontaktos"
                     "bjarne bjarne bjarne"
                     "drescher drescher drescher"
                     "terkel terkel terkel"
                     "copyright copyright copyright"
+}
+
+footer h2 {
+    grid-area: kontaktos;
+    color: white;
+    font-family: Sansa-Bold;
+    text-align: center;
 }
 
 #copyright { 
@@ -1199,8 +1207,9 @@ footer {
     font-family: Sansa-Light;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 0fr 2fr 1fr;
     grid-template-areas: 
+                    "kontaktos kontaktos kontaktos"
                     "bjarne drescher terkel"
                     ". copyright ."
 }
