@@ -2,7 +2,7 @@ const hamburger = document.getElementById("menu-btn");
 const menuContainer = document.getElementById("menu-lists-container");
 let menuOpen = false;
 
-if(screen.width < 768 ) {
+if(screen.width < 768 ) { 
     // åben burger menu on click
     hamburger.addEventListener('click', () => {
         console.log(menuOpen);
@@ -17,7 +17,25 @@ if(screen.width < 768 ) {
         }
     });
 
+    let navLinks = document.querySelectorAll(".nav-link");
+
+    // loop through the buttons using for..of 
+    for (let navLink of navLinks) {
+
+        // listen for a click event 
+        navLink.addEventListener('click', (e) => {
+            console.log(menuOpen);
+            if (menuOpen == true){
+                menuContainer.style.left = -100 + "%";
+                menuOpen = false;
+                console.log(menuOpen);
+            }
+
+        });
+
+    }
 }
+    
 
     
     //const casesOpener = document.getElementById("cases-opener");
