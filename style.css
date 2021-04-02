@@ -257,6 +257,7 @@ h4 {
 .overlay-indhold {
     margin-top: auto;
     margin-bottom: auto;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0fr 0fr 1fr;
@@ -272,7 +273,7 @@ h4 {
     color: white;
     -webkit-overflow-scrolling: touch;
     overflow: scroll;
-    max-height: 450px;
+    max-height: 300px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -708,7 +709,7 @@ p {
     
     .service-tekst {
         padding: 30px;
-        max-height: 450px;
+        max-height: 400px;
     }
 
 
